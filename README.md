@@ -2,6 +2,6 @@
 
 Very basic image gallery 
 
-(./src/big_screen.jpg)
-(./src/md_screen.jpg)
-(./src/sm_screen.jpg)
+[screenshot of full browser size](./src/big_screen.jpg)
+[screenshot of medium browser size](./src/md_screen.jpg)
+[screenshot of small browser size](./src/sm_screen.jpg)
