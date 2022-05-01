@@ -1,0 +1,15 @@
+
+.navbar_container{
+    background-color: black;
+    color: rgb(255, 237, 38);
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top:0;
+
+}
+.navbar{
+    font-size:x-large;
+    font-family: cursive;
+}

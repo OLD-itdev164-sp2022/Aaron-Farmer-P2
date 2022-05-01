@@ -4,7 +4,6 @@ import Card from './components/Card';
 import './App.css';
 import { Box } from 'rebass';
 import styled from 'styled-components';
-import ModalImage from "react-modal-image";
 
 
 //{ imageList.map((image) => (<img src={image.url} alt={image.public_id}></img>)) }
@@ -20,16 +19,14 @@ const Grid = styled(Box)`
 const App = () => {  
   return (
     <>
+    <Navbar />
       <Grid>
-      <ModalImage
-      large="./images/img_1.jpg">
         <Card 
           img={require("./images/img_1.jpg")}
           title="Cool Poses"
           text="Enjoying the sun"
           alt="Sunbathing">
         </Card>
-      </ModalImage>
         <Card 
           img={require("./images/img_2.jpg")}
           title="Snowy Coldy"
