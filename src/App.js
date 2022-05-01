@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 import Card from './components/Card';
 import './App.css';
 import { Box } from 'rebass';
 import styled from 'styled-components';
+import { FaRegKissBeam} from "react-icons/fa";
 
 
 //{ imageList.map((image) => (<img src={image.url} alt={image.public_id}></img>)) }
@@ -18,7 +20,7 @@ const Grid = styled(Box)`
 
 const App = () => {  
   return (
-    <>
+    <section className='big_tainer'>
     <Navbar />
       <Grid>
         <Card 
@@ -85,7 +87,8 @@ const App = () => {
           alt="Alex smiling">
         </Card> 
       </Grid>
-    </>
+      <Footer />
+    </section>
   );
 };
 

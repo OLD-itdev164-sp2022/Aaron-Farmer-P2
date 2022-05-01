@@ -1,3 +1,12 @@
+.big_tainer{
+  overflow: hidden;
+}
+.navbar{
+
+}
+.footer_container{
+  margin-top:1rem;
+}
 .card{
   margin: 5px;
   border-radius: 50px;
@@ -6,11 +15,14 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  scrollbar-color: black;
+  scrollbar-track-color: yellow;
+  scrollbar-width: 5px;
 
 }
 .wrapper:hover {
-  transition: scale(10,10);
-  opacity: 0.7;
+  transform: scale(1.01);
+  
 }
 .card_body{
   padding: 0.65rem
