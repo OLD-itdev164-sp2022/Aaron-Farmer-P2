@@ -4,6 +4,7 @@ import Card from './components/Card';
 import './App.css';
 import { Box } from 'rebass';
 import styled from 'styled-components';
+import ModalImage from "react-modal-image";
 
 
 //{ imageList.map((image) => (<img src={image.url} alt={image.public_id}></img>)) }
@@ -11,8 +12,8 @@ import styled from 'styled-components';
 
 const Grid = styled(Box)`
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto_fill,minmax(450px, 1fr));
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
 
 `;
 
@@ -20,13 +21,15 @@ const App = () => {
   return (
     <>
       <Grid>
+      <ModalImage
+      large="./images/img_1.jpg">
         <Card 
           img={require("./images/img_1.jpg")}
           title="Cool Poses"
           text="Enjoying the sun"
           alt="Sunbathing">
         </Card>
-
+      </ModalImage>
         <Card 
           img={require("./images/img_2.jpg")}
           title="Snowy Coldy"
@@ -53,7 +56,37 @@ const App = () => {
           title="Lucky Egg!"
           text="Hidden treasure within the egg"
           alt="Opening easter eggs">
-        </Card>  
+        </Card> 
+        <Card
+          img={require("./images/img_6.jpg")}
+          title="Chef Boy Farmer"
+          text="Learning to make gourmet Fruit Loops"
+          alt="Alex standing, holding fake food">
+        </Card> 
+        <Card
+          img={require("./images/img_7.jpg")}
+          title="Bob the Builder"
+          text="Yes He Can!"
+          alt="Play with work truck">
+        </Card> 
+        <Card
+          img={require("./images/img_8.jpg")}
+          title="Construction Worker"
+          text="Working hard daily to improve everyones' quality of life"
+          alt="Wearing high visiilty vest and hard hat">
+        </Card> 
+        <Card
+          img={require("./images/img_9.jpg")}
+          title="Pumpkin Time"
+          text="Pumpkin Farms"
+          alt="Sitting amongst pumkins">
+        </Card> 
+        <Card
+          img={require("./images/img_10.jpg")}
+          title="Happiness"
+          text="Smiling with or without teeth"
+          alt="Alex smiling">
+        </Card> 
       </Grid>
     </>
   );
